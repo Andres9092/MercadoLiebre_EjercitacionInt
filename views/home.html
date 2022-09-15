@@ -7,28 +7,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> MercadoLiebre </title>
-    <link href="style.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">   <!--vinculo .html con .css  , en ruta asigno carpeta 'madre' = 'css', a la que pertence el archivo '.css' -->
+    
     <link rel="icon" type="image/png" href="/images/icono.png" >  <!--imagen de nombre 'icono', formato '.png', en carpeta local 'images' -->
+    
+    <!--siguientes 3 link copiados de google fonts para importar el tipo de letra ROBOTO, aplicado en el archivo .css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+     <!--link copiados fontawsome cdn, ultima version para importar iconos -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    
 
 </head>
 
 <body>
 
     <header>
+        
+        <img src = "/images/logo-mercado-liebre.svg" alt="Logotipo MercadoLiebre" class="logoMeli">
 
-        <img src = "/images/logo-mercado-liebre.svg" alt="Logotipo MercadoLiebre">
-
         <br>
         <br>
         <br>
+        <div class ="barraBuscadora">
         <p>
             Lugar para poner la barra de búsqueda
-        </p>
         
-        <p>
-            Comprá en cuotas y sin tarjeta de crédito
         </p>
+        </div>  
+        <!--link de icono copiado de fontawsome <i class="fa-solid fa-bag-shopping"></i> -->
 
+        <p class="compraCuotasCentrado">
+        <i class="fa-solid fa-bag-shopping"></i>&nbsp Compra en cuotas y sin tarjeta de credito</span>
+        </p>
+        <!--&nbsp es para dar un espacio 'tab' -->
+       
         <nav>
             <ul>
                 <a href="Ofertas.html" > <li> Ofertas </li> </a>
@@ -36,55 +52,61 @@
                 <a href="Vender.html" > <li> Vender</li> </a>
                 <a href="Ayuda.html" > <li> Ayuda</li> </a>
                 <br>
-                <a href="Creá tu cuenta.html" > <li> Creá tu cuenta</li> </a>
-                <a href="Ingresá.html" > <li> Ingresá</li> </a>
-                <a href="Mis compras.html" > <li> Mis compras</li> </a>
+                
+                <!--agrego dos clases a mismo elemento 'i' ->  class="fa-regular fa-id-card   icono-margen"-->
+                <!--icono-margen es clase necesaria para editar los iconos en el .css-->
+                <a href="Creá tu cuenta.html" ><li>Creá tu cuenta<i class="fa-regular fa-id-card icono-margen" ></i></li></a>
+                <a href="Ingresá.html" > <li> Ingresá<i class="fa-solid fa-right-to-bracket icono-margen"></i></li> </a>
+                <a href="Mis compras.html" > <li> Mis compras<i class="fa-solid fa-bag-shopping icono-margen"></i></li> </a>
                 <br>
 
             </ul>
         </nav>
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
 
     </header>
 
     <main>
 
-        <section>
+        <section class = "ultimaVisita" >
 
-            <h2><strong> Basado en tu última visita </strong></h2> <!-- uso <center> para centrar la foto-->
+            <h2><strong> Basado en tu última visita </strong></h2> <!-- uso <strong> para hacer la letra tipo bold-->
 
             <center><img src = "/images/img-cafetera-moulinex.jpg" alt="Imagen Cafetera Moulinex" width="300" height="400"></center>
             
-            <center><figcaption>Cafetera Moulinex</figcaption></center> <!--pie de foto-->
+            <center><figcaption class="figcaptionSeccion1">Cafetera Moulinex</figcaption></center> <!--pie de foto-->
 
-            <p>$6.770</p>
-            <p>40% OFF</p>
-            <h3>Cafetera Moulinex</h3>
+            <p class="precio">$6.770</p>
+            <p class ="descuentos">40% off</p>
+            <h3 class="descripcion">Cafetera Moulinex</h3>
             
 
             <center><img src = "/images/img-macbook-pro-2019.jpg" alt="Imagen MacBook Pro 2019" width="300" height="400"></center>
                 
-            <center><figcaption>MacBook Pro 2019</figcaption></center> 
+            <center><figcaption class="figcaptionSeccion1">MacBook Pro 2019</figcaption></center> 
     
-            <p>$230.000</p>
-            <p>20% off</p>
-            <h3>MacBook Pro 2019</h3>
+            <p class="precio">$230.000</p>
+            <p class ="descuentos">20% off</p>
+            <h3 class="descripcion">MacBook Pro 2019</h3>
 
 
             <center><img src = "/images/img-samsung-galaxy-s10.jpg" alt="Imagen Samsung Galaxy S10" width="350" height="400"></center>
                     
-            <center><figcaption>Samsung Galaxy S10</figcaption></center> 
+            <center><figcaption class="figcaptionSeccion1">Samsung Galaxy S10</figcaption></center> 
         
-            <p>$70.500</p>
-            <p>10% off</p>
-            <h3>Samsung Galaxy S10</h3>
+            <p class="precio">$70.500</p>
+            <p class ="descuentos">10% off</p>
+            <h3 class="descripcion">Samsung Galaxy S10</h3>
 
             <center><img src = "/images/img-tv-samsung-smart.jpg" alt='Imagen SmartTv Samsung 43" ' width="350" height="400"></center>
                     
-            <center><figcaption>SmartTv Samsung 43"</figcaption></center> 
+            <center><figcaption class="figcaptionSeccion1">SmartTv Samsung 43"</figcaption></center> 
         
-            <p>$23.200</p>
-            <p>5% off</p>
-            <h3>SmartTv Samsung 43</h3>
+            <p class="precio">$23.200</p>
+            <p class ="descuentos">5% off</p>
+            <h3 class="descripcion">SmartTv Samsung 43</h3>
 
         </section>
 
@@ -99,35 +121,35 @@
             <center><img src = "/images/img-cafetera-moulinex.jpg" alt="Imagen Cafetera Moulinex" width="300" height="400"></center>
                     
             <center><figcaption>Cafetera Moulinex</figcaption></center> 
-            <p>$6.770</p>
-            <p>40% OFF</p>
-            <h3>Cafetera Moulinex</h3>
+            <p class="precio">$6.770</p>
+            <p class ="descuentos">40% off</p>
+            <h3 class="descripcion">Cafetera Moulinex</h3>
                     
         
             <center><img src = "/images/img-macbook-pro-2019.jpg" alt="Imagen MacBook Pro 2019" width="300" height="400"></center>
                         
             <center><figcaption>MacBook Pro 2019</figcaption></center> 
             
-            <p>$230.000</p>
-            <p>20% off</p>
-            <h3>MacBook Pro 2019</h3>
+            <p class="precio">$230.000</p>
+            <p class ="descuentos">20% off</p>
+            <h3 class="descripcion">MacBook Pro 2019</h3>
         
         
             <center><img src = "/images/img-samsung-galaxy-s10.jpg" alt="Imagen Samsung Galaxy S10" width="350" height="400"></center>
                             
             <center><figcaption>Samsung Galaxy S10</figcaption></center> 
                 
-            <p>$70.500</p>
-            <p>10% off</p>
-            <h3>Samsung Galaxy S10</h3>
+            <p class="precio">$70.500</p>
+            <p class ="descuentos">10% off</p>
+            <h3 class="descripcion">Samsung Galaxy S10</h3>
         
             <center><img src = "/images/img-tv-samsung-smart.jpg" alt='Imagen SmartTv Samsung 43" ' width="350" height="400"></center>
                             
             <center><figcaption>SmartTv Samsung 43"</figcaption></center> 
                 
-            <p>$23.200</p>
-            <p>5% off</p>
-            <h3>SmartTv Samsung 43</h3>
+            <p class="precio">$23.200</p>
+            <p class ="descuentos">5% off</p>
+            <h3 class="descripcion">SmartTv Samsung 43</h3>
                 
         </section>
 

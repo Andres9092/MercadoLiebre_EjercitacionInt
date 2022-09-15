@@ -13,6 +13,6 @@ app.listen(3030, ()  => {
 
 app.get('/', (req,res) => { //
 
-    res.sendFile(path.join(__dirname,'./views/home.html'))  // mostrara por browser el archivo index.html en alojado en carpeta 'views'.
+    res.sendFile(path.join(__dirname,'./views/home.html'))  // mostrara por browser el archivo home.html en alojado en carpeta 'views'.
 })
-                                    // __dirname,'./views/index.html'  -> ruta ABSOLUTA.
+                                    // (__dirname,'./views/index.html')  -> ruta ABSOLUTA.
