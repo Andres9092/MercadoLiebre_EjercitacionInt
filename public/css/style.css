@@ -1,4 +1,4 @@
-header{
+header{          /*props generales para todo el header*/
     background-color: #EAC926;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;                                                                                                                                                   
@@ -7,11 +7,89 @@ header{
 .logoMeli{
 
     
-    width: 200px;
+    width: 150px;/*Tamaño del ancho de la imagen*/
+    margin-left: 15px; 
     
 }
 
 
+
+
+.barraBuscadora{
+
+    margin-left: 15px;                  /*Asigno props de borde al div: color, grosor y estilo*/
+    background-color: white;
+    max-width: 210px;
+    border-style:double;
+    border-top-width: 1px;
+    border-right-width: thin;
+    border-bottom-width: thin;
+    border-left-width: thin;
+    border-top-color: black;
+    border-right-color: black;
+    border-bottom-color: black;
+    border-left-color: black;
+    text-align: left;  /*Centrado de texo dentro del div*/
+    border-radius: 1px;/*Radio de borde de la barra*/
+}
+
+.searchIcon{
+
+    margin-left: 15px; /*Asigno margen derecho maximo para acortar la 'barra blanca' de busqueda y que no ocupe todo el ancho de pantalla */
+    margin-top: 1px;/*Asigno margen superior del div para separar de la barra de busqueda*/
+    max-width: 12px;                  /*Asigno props de borde al div: color, grosor y estilo*/
+    background-color: white;
+    border-style:double;
+    border-top-width: 1px;
+    border-right-width: thin;
+    border-bottom-width: thin;
+    border-left-width: thin;
+    border-top-color: black;
+    border-right-color: black;
+    border-bottom-color: black;
+    border-left-color: black;
+    top: 20px;
+    text-align: center;
+    border-radius: 1px;
+
+
+}
+    
+.compraCuotasCentrado{
+
+    margin-left: 50px;
+    
+}
+
+.icono-margen{
+
+    margin-left: 10px;
+}
+
+.alturaEnlaces{
+
+    line-height: 20%;
+}
+
+.burger-menu{
+
+    text-align: center;
+    margin-left: 190px;/*Asigno margen superior del div para separar de la barra de busqueda*/
+    max-width: 20px;                  /*Asigno props de borde al div: color, grosor y estilo*/
+    background-color: #03264C;
+    border-style:solid;
+    border-top-width: 8px;
+    border-bottom-width: 8px;   /*Asigno separadcion entre el icono y el borde del div*/
+    border-left-width: 6px;
+    border-right-width: 6px;
+    border-top-color: black;
+    border-right-color: black;
+    border-bottom-color: black;
+    border-left-color: black;
+    border-radius: 3px;
+    
+
+}
 
 h2{
 
@@ -42,24 +120,4 @@ p{
 .descripcion{
 
     font-size: contain;
-}
-
-.barraBuscadora{
-
-    background-color: white;
-    max-width: 210px;
-    border-top-color: black;
-    border-right-color: black;
-    border-bottom-color: black;
-    border-left-color: black;
-}
-    
-.compraCuotasCentrado{
-
-    margin-left: 50px;
-}
-
-.icono-margen{
-
-    margin-left: 10px;
 }

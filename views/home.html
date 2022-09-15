@@ -26,18 +26,22 @@
 <body>
 
     <header>
+        <br>
+        <div class = "logoMeli">
+        <img src = "/images/logo-mercado-liebre.svg" alt="Logotipo MercadoLiebre">
+        </div>
+        <br>
         
-        <img src = "/images/logo-mercado-liebre.svg" alt="Logotipo MercadoLiebre" class="logoMeli">
-
-        <br>
-        <br>
-        <br>
         <div class ="barraBuscadora">
-        <p>
-            Lugar para poner la barra de búsqueda
+    
+            Buscar productos, marcas...
         
-        </p>
         </div>  
+        
+        <div class="searchIcon">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
         <!--link de icono copiado de fontawsome <i class="fa-solid fa-bag-shopping"></i> -->
 
         <p class="compraCuotasCentrado">
@@ -46,25 +50,27 @@
         <!--&nbsp es para dar un espacio 'tab' -->
        
         <nav>
-            <ul>
-                <a href="Ofertas.html" > <li> Ofertas </li> </a>
-                <a href="Tiendas Oficiales.html" > <li> Tiendas Oficiales</li> </a>
-                <a href="Vender.html" > <li> Vender</li> </a>
-                <a href="Ayuda.html" > <li> Ayuda</li> </a>
-                <br>
-                
+            
+                <p class="alturaEnlaces"><a href="Ofertas.html">Ofertas</a></p>
+                <p class="alturaEnlaces"><a href="Tiendas Oficiales.html">Tiendas Oficiales</a></p>
+                <p class="alturaEnlaces"><a href="Vender.html">Vender</a></p>
+                <p class="alturaEnlaces"><a href="Ayuda.html">Ayuda</a></p>
+                <br>           
                 <!--agrego dos clases a mismo elemento 'i' ->  class="fa-regular fa-id-card   icono-margen"-->
                 <!--icono-margen es clase necesaria para editar los iconos en el .css-->
-                <a href="Creá tu cuenta.html" ><li>Creá tu cuenta<i class="fa-regular fa-id-card icono-margen" ></i></li></a>
-                <a href="Ingresá.html" > <li> Ingresá<i class="fa-solid fa-right-to-bracket icono-margen"></i></li> </a>
-                <a href="Mis compras.html" > <li> Mis compras<i class="fa-solid fa-bag-shopping icono-margen"></i></li> </a>
+                <p class="alturaEnlaces"><a href="Creá tu cuenta.html">Creá tu cuenta<i class="fa-regular fa-id-card icono-margen" ></i></a></p>
+                <p class="alturaEnlaces"><a href="Ingresá.html">Ingresá<i class="fa-solid fa-right-to-bracket icono-margen"></i></a></p>
+                <p class="alturaEnlaces"><a href="Mis compras.html">Mis compras<i class="fa-solid fa-bag-shopping icono-margen"></i></a></p>
                 <br>
 
-            </ul>
         </nav>
+        
         <div class="burger-menu">
-            <i class="fas fa-bars"></i>
+
+            <i class="fas fa-bars fa-lg" style="color:white"></i> <!-- modifico color del icono para que haya contraste con fondo azul-->
+
         </div>
+        <br>
 
     </header>
 
