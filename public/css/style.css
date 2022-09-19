@@ -1,14 +1,14 @@
 header{          /*props generales para todo el header*/
     background-color: #EAC926;
     font-family: 'Roboto', sans-serif;
-    font-size: 12px;                                                                                                                                                   
+    font-size: 12px                                                                                                                                                 
 }
 
 .logoMeli{
 
     
     width: 150px;/*Tamaño del ancho de la imagen*/
-    margin-left: 15px; 
+    margin-left: 17px
     
 }
 
@@ -30,12 +30,13 @@ header{          /*props generales para todo el header*/
     border-bottom-color: black;
     border-left-color: black;
     text-align: left;  /*Centrado de texo dentro del div*/
-    border-radius: 1px;/*Radio de borde de la barra*/
+    border-radius: 1px ;/*Radio de borde de la barra*/
+    display:inline-block
 }
 
 .searchIcon{
 
-    margin-left: 15px; /*Asigno margen derecho maximo para acortar la 'barra blanca' de busqueda y que no ocupe todo el ancho de pantalla */
+    margin-left: 4px; /*Asigno margen derecho maximo para acortar la 'barra blanca' de busqueda y que no ocupe todo el ancho de pantalla */
     margin-top: 1px;/*Asigno margen superior del div para separar de la barra de busqueda*/
     max-width: 12px;                  /*Asigno props de borde al div: color, grosor y estilo*/
     background-color: white;
@@ -51,30 +52,31 @@ header{          /*props generales para todo el header*/
     top: 20px;
     text-align: center;
     border-radius: 1px;
+    display:inline-block
 
 
 }
     
 .compraCuotasCentrado{
 
-    margin-left: 50px;
+    text-align: center
     
 }
 
 .icono-margen{
 
-    margin-left: 10px;
+    margin-left: 10px
 }
 
 .alturaEnlaces{
 
-    line-height: 20%;
+    line-height: 20%
 }
 
 .burger-menu{
 
     text-align: center;
-    margin-left: 190px;/*Asigno margen superior del div para separar de la barra de busqueda*/
+    margin: 0 auto; /*Asigno margen superior del div para separar de la barra de busqueda*/
     max-width: 20px;                  /*Asigno props de borde al div: color, grosor y estilo*/
     background-color: #03264C;
     border-style:solid;
@@ -86,41 +88,74 @@ header{          /*props generales para todo el header*/
     border-right-color: black;
     border-bottom-color: black;
     border-left-color: black;
-    border-radius: 3px;
+    border-radius: 3px
+   
+
+}
+
+main{
+
+    margin: 0 auto;
+    width:90% ;   /*del total de la pantalla. Podria ser 90vw ?*/
+    background-color: #ebebeb;
+
+
+}
+
+
+.productos{
+
+    margin-bottom: 10px;
+    padding: 15px;
+      
     
+}
+
+.imagen{
+
+   height: auto;
+   width: 100%  /*del padre contenedor, que es article class="productos", quer a su vez es igual al main por default*/
+
+    
+}
+
+.cadaProductoSinLaFoto{
+
+   
+    padding: 15px;
+    border: solid 1px #ebebeb;
+    background-color: white;
 
 }
 
 h2{
 
-    font-size: 24px;
-    
+    font-size: 24px
    
 }
 
-.figcaptionSeccion1{
-
-    color: blue;
-}
-
 p{
-    font-size: 12px;
+    font-size: 12px
 }
 
 .precio{
 
-    font-size: 18px;
+    font-size: 18px
 }
 
 .descuentos{
 
     font-size: 16px;
+    color:#39b54a
 }
 
 .descripcion{
 
-    font-size: contain;
+    font-size: contain
 }
+
+
+
 
 footer{          /*props generales para todo el header*/
     
@@ -137,7 +172,7 @@ footer{          /*props generales para todo el header*/
     border-right-style: outset;
     border-bottom-style: outset;
     border-left-color: grey;
-    border-radius: 3px;
+    border-radius: 3px   
                                                                                                                                              
 }
 
@@ -147,8 +182,7 @@ footer{          /*props generales para todo el header*/
     margin-left: 10px; /*Asigno margen derecho maximo para acortar la 'barra blanca' de busqueda y que no ocupe todo el ancho de pantalla */
     /*Asigno margen superior del div para separar de la barra de busqueda*/
     margin-bottom: 10px;             /*Asigno props de borde al div: color, grosor y estilo*/
-    border-radius: 1px;
-
+    border-radius: 1px
 }
 
 .textosSecciones{
@@ -162,19 +196,19 @@ footer{          /*props generales para todo el header*/
 
     color:#666;
     font-size: 17px;
-    font-weight: bold;
+    font-weight: bold
 }
 
 .parrafosFooter{
 
     color:rgb(195, 195, 195);
-    font-size: 14px;   
+    font-size: 14px
     
 }
 
 .interlin{
 
-    margin-bottom: 0px;
+    margin-bottom: 0px
 }
 
 .copyr{
@@ -183,5 +217,6 @@ footer{          /*props generales para todo el header*/
     font-size: 12px;
     color: #7a7676;
     font-weight:bolder;
-    margin-left: 10px;
+    margin-left: 10px
 }
+
