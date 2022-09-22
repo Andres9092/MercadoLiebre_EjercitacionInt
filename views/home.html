@@ -25,65 +25,75 @@
 
 <body>
 
-    <header>
-        <br>
-        <div class = "logoMeli">
-        <img src = "/images/logo-mercado-liebre.svg" alt="Logotipo MercadoLiebre">
-        </div>
-        <br>
+    <header class="mainHeader">  <!--es el header completo, que tendra dos lineas grandes, primera logo con barra buscadora y frase y la otra con navigation bar -->
         
-        <div class ="barraBuscadora">
-    
-            Buscar productos, marcas...
-        
-        </div>  
-        
-        <div class="searchIcon">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
+        <div class="topHeader-bottomHeader">   <!--lo cree para mover todo el contenido a la derecha menos la imagen banner-->
 
-        <!--link de icono copiado de fontawsome <i class="fa-solid fa-bag-shopping"></i> -->
-
-        <p class="compraCuotasCentrado">
-        <i class="fa-solid fa-bag-shopping"></i>&nbsp Compra en cuotas y sin tarjeta de credito</span>
-        </p>
-        <!--&nbsp es para dar un espacio 'tab' -->
-       
-        <nav class="enlacesHeader">
+            <div class = "topHeader">   <!--linea superior del header -->
             
-                <p class="alturaEnlaces"><a href="Ofertas.html">Ofertas</a></p>
-                <p class="alturaEnlaces"><a href="Tiendas Oficiales.html">Tiendas Oficiales</a></p>
-                <p class="alturaEnlaces"><a href="Vender.html">Vender</a></p>
-                <p class="alturaEnlaces"><a href="Ayuda.html">Ayuda</a></p>
-                <br>           
-                <!--agrego dos clases a mismo elemento 'i' ->  class="fa-regular fa-id-card   icono-margen"-->
-                <!--icono-margen es clase necesaria para editar los iconos en el .css-->
-                <p class="alturaEnlaces"><a href="Creá tu cuenta.html">Creá tu cuenta<i class="fa-regular fa-id-card icono-margen" ></i></a></p>
-                <p class="alturaEnlaces"><a href="Ingresá.html">Ingresá<i class="fa-solid fa-right-to-bracket icono-margen"></i></a></p>
-                <p class="alturaEnlaces"><a href="Mis compras.html">Mis compras<i class="fa-solid fa-bag-shopping icono-margen"></i></a></p>
-                <br>
+                <div class ="logo-barraBuscadora">
+                    
+                    <img class="logoMeli" src = "/images/logo-mercado-liebre.svg" alt="Logotipo MercadoLiebre">
+           
+                    <div class = "barraBuscadora-Icon">                    
+                        <h2 class="barraBuscadora">Buscar productos, marcas...</h2>
+            
+                        <div class="searchIcon">
+                            <i class="fa-solid fa-magnifying-glass"></i>  <!--barra buscadora con icono. Pongo el icono dentro del titulo si no me hace el salto de linea -->
+                    </div>
+                    </div>
+                </div>
 
-        </nav>
+                <h2 class="compraCuotasCentrado"><i class="fa-solid fa-bag-shopping"></i> Compra en cuotas y sin tarjeta de credito</h2>   <!-- icono shopping con frase -->
+                                                                                                                <!--link de icono copiado de fontawsome <i class="fa-solid fa-bag-shopping"></i> -->
+                                                                                                                <!--&nbsp es para dar un espacio 'tab' -->
+            </div> 
+
+            <nav class="bottomHeader">  <!--linea inferior del header que contendra dos gruopos de listas desordenadas para el nav bar -->
+            
+                <ul class="leftBottomHeader">
+
+                    <li><a href="Ofertas.html">Ofertas</a></li>
+                    <li ><a href="Tiendas Oficiales.html">Tiendas Oficiales</a></li>
+                    <li ><a href="Vender.html">Vender</a></li>
+                    <li ><a href="Ayuda.html">Ayuda</a></li>
+
+                </ul>
+
+                <ul class="rigthBottomHeader">
+
+                    <li ><a href="Creá tu cuenta.html">Creá tu cuenta <i class="fa-regular fa-id-card icono-margen" ></i></a></li>
+                    <li ><a href="Ingresá.html">Ingresá <i class="fa-solid fa-right-to-bracket icono-margen"></i></a></li>
+                    <li ><a href="Mis compras.html">Mis compras <i class="fa-solid fa-bag-shopping icono-margen"></i></a></li>
+                
+                </ul>                                                                           <!--agrego dos clases a mismo elemento 'i' ->  class="fa-regular fa-id-card   icono-margen"-->
+                                                                                           <!--icono-margen es clase necesaria para editar los iconos en el .css-->
+            
+            </nav> 
         
-        <div class="burger-menu">
+            <div class="burger-menu">
 
-            <i class="fas fa-bars fa-lg" style="color:white"></i> <!-- modifico color del icono para que haya contraste con fondo azul-->
+                <i class="fas fa-bars fa-lg" style="color:white"></i> <!-- modifico color del icono para que haya contraste con fondo azul-->
 
+            </div>
+        
         </div>
-        <br>
-    
-    <img class="imagenBanner" src = "/images/img-home-banner.jpg" alt="Imagen Home Banner">
-        
+
+        <div>
+            <img  class="imagenBanner"src = "/images/img-home-banner.jpg" alt="Imagen Home Banner">
+        </div>
+
     </header>
+      
 
-    
-
-    <main>       
+    <main>            
           
         <section class="seccionVisita">
 
             
             <h2><strong> Basado en tu última visita </strong></h2> <!-- uso <strong> para hacer la letra tipo bold-->
+
+            <div class="productosUltimaVisita">
 
             <article class="productos">
                                 
@@ -94,41 +104,49 @@
                 
                 <div class="cadaProductoSinLaFoto">
                     
-                    
-                    <div class="iconoCirculoDelivery">
-                        <div class="iconoCamion">
-                        <i class="fa-solid fa-truck" style="color:#39b54a"></i>  <!-- modifico color del icono para que haya contraste con fondo azul-->
-                        </div>  
+                    <div class="contendorParaCirculoDelivery">
+                        <div class="iconoCirculoDelivery">
+                            <div class="iconoCamion">
+                            <i class="fa-solid fa-truck" style="color:#39b54a"></i>  <!-- modifico color del icono para que haya contraste con fondo azul-->
+                            </div>  
+                        </div>
                     </div>
                                        
                     <div class="datosNumeros">                          
-                    <p class="precio">$6.770</p>
-                    <p class ="descuentos">40% off</p>
-                    <h3 class="descripcion">Cafetera Moulinex</h3>
+                        <div class="precio-Descuento">
+                            <p class="precio">$6.770</p>
+                            <p class ="descuentos">40% off</p>
+                        </div>
+                        <h3 class="descripcion">Cafetera Moulinex</h3>
                     </div>
+
                 </div>
 
             </article>
             
-            <article class="productos">
-
-                
+            <article class="productos">             
 
                 <img class="imagen" src = "/images/img-macbook-pro-2019.jpg" alt="Imagen MacBook Pro 2019">
-                    
-                
+                                    
 
                 <div class="cadaProductoSinLaFoto">
                     
-                    <div class="iconoCirculoDelivery">
-                        <div class="iconoCamion">
-                        <i class="fa-solid fa-truck" style="color:#39b54a"></i>  <!-- modifico color del icono para que haya contraste con fondo azul-->
-                        </div>  
+                    <div class="contendorParaCirculoDelivery">
+                        <div class="iconoCirculoDelivery">
+                            <div class="iconoCamion">
+                            <i class="fa-solid fa-truck" style="color:#39b54a"></i>  <!-- modifico color del icono para que haya contraste con fondo azul-->
+                            </div>  
+                        </div>
                     </div>
 
-                    <p class="precio">$230.000</p>
-                    <p class ="descuentos">20% off</p>
-                    <h3 class="descripcion">MacBook Pro 2019</h3>
+                    <div class="datosNumeros">                          
+                        <div class="precio-Descuento">
+                            <p class="precio">$230.000</p>
+                            <p class ="descuentos">20% off</p>
+                        </div>
+                        <h3 class="descripcion">MacBook Pro 2019</h3>
+                    </div>
+
                 </div>
 
             </article>
@@ -141,15 +159,22 @@
 
                 <div class="cadaProductoSinLaFoto">
                     
-                    <div class="iconoCirculoDelivery">
-                        <div class="iconoCamion">
-                        <i class="fa-solid fa-truck" style="color:#39b54a"></i>  <!-- modifico color del icono para que haya contraste con fondo azul-->
-                        </div>  
+                    <div class="contendorParaCirculoDelivery">
+                        <div class="iconoCirculoDelivery">
+                            <div class="iconoCamion">
+                            <i class="fa-solid fa-truck" style="color:#39b54a"></i>  <!-- modifico color del icono para que haya contraste con fondo azul-->
+                            </div>  
+                        </div>
                     </div>
 
-                    <p class="precio">$70.500</p>
-                    <p class ="descuentos">10% off</p>
-                    <h3 class="descripcion">Samsung Galaxy S10</h3>
+                    <div class="datosNumeros">                          
+                        <div class="precio-Descuento">
+                            <p class="precio">$70.500</p>
+                            <p class ="descuentos">10% off</p>
+                        </div>
+                        <h3 class="descripcion">Samsung Galaxy S10</h3>
+                    </div>
+
                 </div>
 
             </article>
@@ -163,19 +188,28 @@
 
                 <div class="cadaProductoSinLaFoto">
                     
-                    <div class="iconoCirculoDelivery">
-                        <div class="iconoCamion">
-                        <i class="fa-solid fa-truck" style="color:#39b54a"></i>  <!-- modifico color del icono para que haya contraste con fondo azul-->
-                        </div>  
+                    <div class="contendorParaCirculoDelivery">
+                        <div class="iconoCirculoDelivery">
+                            <div class="iconoCamion">
+                            <i class="fa-solid fa-truck" style="color:#39b54a"></i>  <!-- modifico color del icono para que haya contraste con fondo azul-->
+                            </div>  
+                        </div>
                     </div>
                     
-                    
-                    <p class="precio">$23.200</p>
-                    <p class ="descuentos">5% off</p>
-                    <h3 class="descripcion">SmartTv Samsung 43</h3>
 
+                    <div class="datosNumeros">                          
+                        <div class="precio-Descuento">
+                            <p class="precio">$23.200</p>
+                            <p class ="descuentos">5% off</p>
+                        </div>
+                        <h3 class="descripcion">SmartTv Samsung 43</h3>
+                    </div>
+                    
                 </div>
+
             </article>
+
+            </div>
 
         </section>
           
@@ -183,97 +217,124 @@
             
             <h2><strong> Sección de Ofertas </strong></h2> 
             
-            <article class="productos">
-
+            <div class="productosOferta">
             
-                <img class="imagen" src = "/images/img-cafetera-moulinex.jpg" alt="Imagen Cafetera Moulinex">
+                <article class="productos">
+                                
+               
+                    <img class="imagen" src = "/images/img-cafetera-moulinex.jpg" alt="Imagen Cafetera Moulinex">
                     
-        
-                
-                <div class="cadaProductoSinLaFoto">
-                    
-                    <div class="iconoCirculoDelivery">
-                        <div class="iconoCamion">
-                        <i class="fa-solid fa-truck" style="color:#39b54a"></i>  <!-- modifico color del icono para que haya contraste con fondo azul-->
-                        </div>  
-                    </div>
-
-                    
-                    <p class="precio">$6.770</p>
-                    <p class ="descuentos">40% off</p>
-                    <h3 class="descripcion">Cafetera Moulinex</h3>
-                </div>
-                    
-            </article>
-
-            <article class="productos">
-
-                <img class="imagen" src = "/images/img-macbook-pro-2019.jpg" alt="Imagen MacBook Pro 2019">
+                                           <!--si quisiera pie de foto:  <figcaption class="figcaptionSeccion1">Samsung Galaxy S10</figcaption> -->
+                     
+                     <div class="cadaProductoSinLaFoto">
+                         
+                         <div class="contendorParaCirculoDelivery">
+                             <div class="iconoCirculoDelivery">
+                                 <div class="iconoCamion">
+                                 <i class="fa-solid fa-truck" style="color:#39b54a"></i>  <!-- modifico color del icono para que haya contraste con fondo azul-->
+                                 </div>  
+                             </div>
+                         </div>
+                                            
+                         <div class="datosNumeros">                          
+                             <div class="precio-Descuento">
+                                 <p class="precio">$6.770</p>
+                                 <p class ="descuentos">40% off</p>
+                             </div>
+                             <h3 class="descripcion">Cafetera Moulinex</h3>
+                         </div>
+     
+                     </div>
+     
+                 </article>
+                 
+                 <article class="productos">             
+     
+                     <img class="imagen" src = "/images/img-macbook-pro-2019.jpg" alt="Imagen MacBook Pro 2019">
+                                         
+     
+                     <div class="cadaProductoSinLaFoto">
+                         
+                         <div class="contendorParaCirculoDelivery">
+                             <div class="iconoCirculoDelivery">
+                                 <div class="iconoCamion">
+                                 <i class="fa-solid fa-truck" style="color:#39b54a"></i>  <!-- modifico color del icono para que haya contraste con fondo azul-->
+                                 </div>  
+                             </div>
+                         </div>
+     
+                         <div class="datosNumeros">                          
+                             <div class="precio-Descuento">
+                                 <p class="precio">$230.000</p>
+                                 <p class ="descuentos">20% off</p>
+                             </div>
+                             <h3 class="descripcion">MacBook Pro 2019</h3>
+                         </div>
+     
+                     </div>
+     
+                 </article>
+     
+                 <article class="productos">
+     
+                     
+                     <img class="imagen" src = "/images/img-samsung-galaxy-s10.jpg" alt="Imagen Samsung Galaxy S10">
+                         
+     
+                     <div class="cadaProductoSinLaFoto">
+                         
+                         <div class="contendorParaCirculoDelivery">
+                             <div class="iconoCirculoDelivery">
+                                 <div class="iconoCamion">
+                                 <i class="fa-solid fa-truck" style="color:#39b54a"></i>  <!-- modifico color del icono para que haya contraste con fondo azul-->
+                                 </div>  
+                             </div>
+                         </div>
+     
+                         <div class="datosNumeros">                          
+                             <div class="precio-Descuento">
+                                 <p class="precio">$70.500</p>
+                                 <p class ="descuentos">10% off</p>
+                             </div>
+                             <h3 class="descripcion">Samsung Galaxy S10</h3>
+                         </div>
+     
+                     </div>
+     
+                 </article>
+     
+                 <article class="productos">
+     
+                     
+                     <img class="imagen" src = "/images/img-tv-samsung-smart.jpg" alt='Imagen SmartTv Samsung 43"'>
                         
+                                             
+     
+                     <div class="cadaProductoSinLaFoto">
+                         
+                         <div class="contendorParaCirculoDelivery">
+                             <div class="iconoCirculoDelivery">
+                                 <div class="iconoCamion">
+                                 <i class="fa-solid fa-truck" style="color:#39b54a"></i>  <!-- modifico color del icono para que haya contraste con fondo azul-->
+                                 </div>  
+                             </div>
+                         </div>
+                         
+     
+                         <div class="datosNumeros">                          
+                             <div class="precio-Descuento">
+                                 <p class="precio">$23.200</p>
+                                 <p class ="descuentos">5% off</p>
+                             </div>
+                             <h3 class="descripcion">SmartTv Samsung 43</h3>
+                         </div>
+                         
+                     </div>
+     
+                 </article>
+     
             
-                
-                <div class="cadaProductoSinLaFoto">
-                    
-                    <div class="iconoCirculoDelivery">
-                        <div class="iconoCamion">
-                        <i class="fa-solid fa-truck" style="color:#39b54a"></i>  <!-- modifico color del icono para que haya contraste con fondo azul-->
-                        </div>  
-                    </div>                  
-                    
-                    
-                    <p class="precio">$230.000</p>
-                    <p class ="descuentos">20% off</p>
-                    <h3 class="descripcion">MacBook Pro 2019</h3>
-                </div>
-
-            </article>
-
-        
-            <article class="productos">
-
-        
-                <img class="imagen" src = "/images/img-samsung-galaxy-s10.jpg" alt="Imagen Samsung Galaxy S10">
-                            
-
-                <div class="cadaProductoSinLaFoto">
-                
-                    <div class="iconoCirculoDelivery">
-                        <div class="iconoCamion">
-                        <i class="fa-solid fa-truck" style="color:#39b54a"></i>  <!-- modifico color del icono para que haya contraste con fondo azul-->
-                        </div>  
-                    </div>                    
-                    
-                    <p class="precio">$70.500</p>
-                    <p class ="descuentos">10% off</p>
-                    <h3 class="descripcion">Samsung Galaxy S10</h3>
-
-                </div>
-
-            </article>
-
-
-            <article class="productos">
-        
-              
-                <img class="imagen" src = "/images/img-tv-samsung-smart.jpg" alt='Imagen SmartTv Samsung 43" '>
-                            
-            
-
-                <div class="cadaProductoSinLaFoto">
-                    
-                    <div class="iconoCirculoDelivery">
-                        <div class="iconoCamion">
-                        <i class="fa-solid fa-truck" style="color:#39b54a"></i>  <!-- modifico color del icono para que haya contraste con fondo azul-->
-                        </div>  
-                    </div>            
-                    
-                    <p class="precio">$23.200</p>
-                    <p class ="descuentos">5% off</p>
-                    <h3 class="descripcion">SmartTv Samsung 43</h3>
-
-                </div>
-
-            </article>
+            </div>
                 
         </section>
 

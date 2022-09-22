@@ -2,101 +2,102 @@ body{
 
     border:4px solid  #ebebeb;
     box-shadow: 1px 2px 0px rgb(100,100,100);
-    margin:4px
+    margin:4px;
+    font-family: 'Roboto', sans-serif;
 }
 
-header{          /*props generales para todo el header*/
+.mainHeader{          /*props generales para todo el header*/
     background-color: #EAC926;
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px                                                                                                                                                 
+    padding: 0px;
+                                                                                                                                                    
+}
+
+.topHeader-bottomHeader{ /*lo cree para mover todo el contenido a la derecha menos la imagen banner*/
+
+        padding:12px
 }
 
 .logoMeli{
 
     
     width: 150px;/*Tamaño del ancho de la imagen*/
-    padding-left: 15px
+   
     
 }
 
-
-
-
 .barraBuscadora{
 
-    margin-left: 15px;                  /*Asigno props de borde al div: color, grosor y estilo*/
+                   /*Asigno props de borde al div: color, grosor y estilo*/
     background-color: white;
     max-width: 210px;
-    border-style:double;
-    border-top-width: 1px;
-    border-right-width: thin;
-    border-bottom-width: thin;
-    border-left-width: thin;
-    border-top-color: black;
-    border-right-color: black;
-    border-bottom-color: black;
-    border-left-color: black;
+    border: thin black solid;
     text-align: left;  /*Centrado de texo dentro del div*/
-    border-radius: 1px ;/*Radio de borde de la barra*/
-    display:inline-block /*Posiciono como elemento de linea para colocar el icono de buqueda al lado*/
+    border-radius: 2px solid ;/*Radio de borde de la barra*/
+    display:inline-block; /*Posiciono como elemento de linea para colocar el icono de buqueda al lado*/
+    font-size:15px;
+
 }
 
 .searchIcon{
 
-    margin-left: 4px; /*Asigno margen derecho maximo para acortar la 'barra blanca' de busqueda y que no ocupe todo el ancho de pantalla */
-    margin-top: 1px;/*Asigno margen superior del div para separar de la barra de busqueda*/
-    max-width: 12px;                  /*Asigno props de borde al div: color, grosor y estilo*/
+    /*Asigno margen derecho maximo para acortar la 'barra blanca' de busqueda y que no ocupe todo el ancho de pantalla */
+    
+    margin-left: 1px;            /*Asigno margen superior del div para separar de la barra de busqueda*/
+                     /*Asigno props de borde al div: color, grosor y estilo*/
     background-color: white;
-    border-style:double;
-    border-top-width: 1px;
-    border-right-width: thin;
-    border-bottom-width: thin;
-    border-left-width: thin;
-    border-top-color: black;
-    border-right-color: black;
-    border-bottom-color: black;
-    border-left-color: black;
-    top: 20px;
+    border: thin black solid;
+    max-width: 15px; 
     text-align: center;
-    border-radius: 1px;
-    display:inline-block /*Posiciono como elemento de linea para colocar la barra de buqueda al lado*/
-
+    border-radius: 2px;
+    display:inline-block;/*Posiciono como elemento de linea para colocar la barra de buqueda al lado*/
+    font-size:15px;
+    padding-left: 1px;
+    padding-right: 1px;
 
 }
     
 .compraCuotasCentrado{
 
-    text-align: center
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
     
-}
-
-.icono-margen{
-
-    padding-left: 3px
-}
-
-.alturaEnlaces{
-
-    line-height: 20%
 }
 
 .burger-menu{
 
     text-align: center;
-    margin: 0 auto; /*Asigno margen superior e ing en 0 y derecho e izq centrado 'auto'*/
-    max-width: 20px;                  /*Asigno props de borde al div: color, grosor y estilo*/
+    display:block;
+    margin:auto; /*Asigno auto para centrarlo respecto del bloque div'*/
+    max-width: 20px;                 
     background-color: #03264C;
-    border: solid #03264C 5px;
+    padding:8px;
     border-radius: 3px;
     
+}
+
+ul{   /*edito cada item del los dos listados*/
+
+    list-style: none; /*quito bullets en list items*/
+    padding-left: 0;
+}
+
+
+a{     /*edito cada link*/
+
+
+    text-decoration: none; /*quito el subrayado*/
+    color:black;
+    line-height: 50%
 
 }
 
-.imagenBanner{ /*la inclui dentro de header*/
 
-   width: 100%;
-   vertical-align: middle /*para eliminir el espacio de 3px que me pone debajo de la foto por default*/
+.imagenBanner{ /*la inclui dentro del header*/
+
   
+   vertical-align: middle; /*para eliminir el espacio de 3px que me pone debajo de la foto por default*/
+   width: 100%; /*ocupar el 100% del div osea del header*/
 }
 
 main{
@@ -117,8 +118,10 @@ main{
 .productos{
 
     margin-bottom: 10px;
-    padding: 15px;
-          
+    box-shadow: 5px 5px 5px 3px rgba(0,0,0,0.3);  
+    
+   
+        
 }
 
 .imagen{
@@ -148,6 +151,7 @@ main{
 }
 
 
+
 .cadaProductoSinLaFoto{
 
    
@@ -158,17 +162,21 @@ main{
 }
 
 
+.precio-Descuento{
+
+    display:flex;
+    align-items: center;
+}
+
+
 .datosNumeros{
 
     margin-top: 1px;
 }
 
-h2{
 
-    font-size: 24px;
-    padding-left: 15px;
   
-}
+
 
 p{
     font-size: 12px
@@ -186,11 +194,14 @@ p{
     font-size: 16px;
     color:#39b54a;
     line-height: 1px;
+    padding-left: 1.5rem;
+    font-weight: bold;
 }
 
 .descripcion{
 
-    font-size: contain
+    font-size: 1rem;
+    color:grey
 }
 
 
@@ -258,37 +269,417 @@ footer{          /*props generales para todo el header*/
 
 
 
-@media (max-width:361px){
+@media (max-width:735px){
 
    
-    .enlacesHeader{
+    .bottomHeader{
 
-        display:none;
+        display:none; /*escondo el contenedor de las listas desordenadas*/
+    }
+
+    .topHeader{
+
+        margin-bottom: 15px;  /*alejo el topHeader del burguer menu*/
+    }
+
+    .imagenBanner{
+
+        margin-top: 20px
     }
         
-    .descripcion{
+       
+    .compraCuotasCentrado{
 
-        display: none;
+        font-size: 12px;
     }
+
+    .barraBuscadora{  /*edito la barra buscadora*/
+
+        border:none;
+        font-size: 10px;
+        margin:0;
+        padding-left:5px
+    }
+
+    .searchIcon{  /*edito el icono buscador*/
+
+        border:none;
+        padding-right:5px
+
+    }
+   
+
+    .logo-barraBuscadora{   /*contenedor padre que contiene el logo meli y el contenedor que a su vez contiene la barra buscadora y el icono search*/
+
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+     
+    }
+
+    
+    .logoMeli {  /*mitad del div padre*/
+
+        flex-grow: 0.5;
+        padding-right: 5px;
+    }
+    
+    .barraBuscadora-Icon{   /*contenedor generado para unir la barra buscadora y el icono search*/
+
+        background-color: white;
+        background-color: white;
+        border: solid 1px white;
+        border-radius: 3px;
+        flex-grow: 0.5;/*mitad del div padre*/
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        
+    }
+   
 }
 
-@media (min-width:361px){
 
-   
+@media (min-width:735px){
+
+    
+    .topHeader-bottomHeader{
+
+        padding-bottom: 5px;
+    }
+    
+    
+    .topHeader{
+
+        display: flex;  /*dispongo en misma linea los 3 items internos: logo, barra+searicon y frase cuotas*/
+        margin-top:10px;
+        justify-content: space-around;  /*acomodo los 3 items internos: logo, barra+searicon y frase cuotas*/
+       align-items: center;
+        
+    }
+
+
     .burger-menu{
 
         display:none;
-        margin-top: 15px; /*Asigno margen superior e ing en 0 y derecho e izq centrado 'auto'*/
+
        
     }
+
+
+ 
+
+    .logo-barraBuscadora{   /*contenedor padre que contiene el logo meli y el contenedor que a su vez contiene la barra buscadora y el icono search*/
+
+        display: flex;
+        flex-grow: 0.6;
+        justify-content: space-around;
+      
+
+    }
+
+    .logoMeli {  /*mitad del div padre*/
+
+        flex-grow: 0.5;
+        padding-right: 2em;
+        width: 50%;
+    }
+
+
+    .barraBuscadora-Icon{   /*contenedor generado para unir la barra buscadora y el icono search*/
+
+      
+        display: flex;  /*dispongo en misma linea los 2 items internos:  barra y searicon */
+        align-items: center;
+    
+        
+    }
+
+    
+    .searchIcon{  /*edito el icono buscador*/
+
+        border:none;    
+        border-radius:2px;
+        border: solid 1px black;
+        margin-left: 5px;
+        
+    
+
+    }
+
+    .barraBuscadora{  /*edito la barra buscadora*/
+
+        border:solid 1px white;
+        border-radius: 1px;
+        width: 100%;
+       
+    }
+
+
+    .compraCuotasCentrado{
+
+        font-size: 15px;
+       
+      
+    }
+
+
+    .bottomHeader{ /*dispongo en misma linea los 2 pares de ul*/
+
+        display:flex; 
+        justify-content: space-between;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    .leftBottomHeader{  /*dispongo en misma linea  primer ul*/
+
+        display:flex; 
+        justify-content: flex-start;
+        flex-grow: 0.5;
+        padding-left: 10px;
+    }
+
+
+    .rigthBottomHeader{ /*dispongo en misma linea segundo ul*/
+
+        display:flex; 
+        justify-content: flex-end;
+        flex-grow: 0.5;
+        padding-right: 10px;
+    }
+
+    ul{
+        font-size: 11px;
+        
+
+
+    }
+
+    li{
+    padding-left:5px ;
+    padding-right:5px
+
+    }
+   
+    .productosUltimaVisita{  /*dispongo en contendor a los 4 ariculos*/
+
+        display: flex; /*dispongo en contendor a los 4 ariculos*/
+        flex-wrap: wrap;  /*dispongo en contendor a los articulos que entren en el ancho del contenedor padre*/
+        justify-content: space-between
+
+
+    }
+
+    .productosOferta{
+        display: flex; /*dispongo en contendor a los 4 ariculos*/
+        flex-wrap: wrap;  /*dispongo en contendor a los articulos que entren en el ancho del contenedor padre*/
+        justify-content: space-between
+
+    }
+    
     .productos{
 
-        box-shadow: 0px 0px 10px rgb(100,100,100)
-    
+        width: 45%; /*dispongo el ancho de cada tarjeta respecto al contenedor padre*/
+        padding: 0px;
+        margin-bottom: 15px;
     }
 
-    main{
+    .contendorParaCirculoDelivery{
+        display: flex;
+        justify-content: end;
+    }
+
+    
+
+    .descuentos{
+
+        font-size: 16px;
+        color:#39b54a;
+        line-height: 1px;
+        padding-left: 60px;
+      
+    }
+    
+}
+
+
+
+
+@media (min-width:1024px){
+
+    
+    .topHeader-bottomHeader{
+
         padding-bottom: 5px;
     }
+    
+    
+    .topHeader{
+
+        display: flex;  /*dispongo en misma linea los 3 items internos: logo, barra+searicon y frase cuotas*/
+        margin-top:10px;
+        justify-content: space-around;  /*acomodo los 3 items internos: logo, barra+searicon y frase cuotas*/
+       align-items: center;
+        
+    }
+
+
+    .burger-menu{
+
+        display:none;
+
+       
+    }
+
+
+ 
+
+    .logo-barraBuscadora{   /*contenedor padre que contiene el logo meli y el contenedor que a su vez contiene la barra buscadora y el icono search*/
+
+        display: flex;
+        flex-grow: 0.6;
+        justify-content: space-around;
+      
+
+    }
+
+    .logoMeli {  /*mitad del div padre*/
+
+        flex-grow: 0.5;
+        padding-right: 2em;
+        width: 50%;
+    }
+
+
+    .barraBuscadora-Icon{   /*contenedor generado para unir la barra buscadora y el icono search*/
+
+      
+        display: flex;  /*dispongo en misma linea los 2 items internos:  barra y searicon */
+        align-items: center;
+    
+        
+    }
+
+    
+    .searchIcon{  /*edito el icono buscador*/
+
+        border:none;    
+        border-radius:2px;
+        border: solid 1px black;
+        margin-left: 5px;
+        
+    
+
+    }
+
+    .barraBuscadora{  /*edito la barra buscadora*/
+
+        border:solid 1px white;
+        border-radius: 1px;
+        width: 100%;
+       
+    }
+
+
+    .compraCuotasCentrado{
+
+        font-size: 15px;
+       
+      
+    }
+
+
+    .bottomHeader{ /*dispongo en misma linea los 2 pares de ul*/
+
+        display:flex; 
+        justify-content: space-between;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    .leftBottomHeader{  /*dispongo en misma linea  primer ul*/
+
+        display:flex; 
+        justify-content: flex-start;
+        flex-grow: 0.5;
+        padding-left: 10px;
+    }
+
+
+    .rigthBottomHeader{ /*dispongo en misma linea segundo ul*/
+
+        display:flex; 
+        justify-content: flex-end;
+        flex-grow: 0.5;
+        padding-right: 10px;
+    }
+
+    ul{
+        font-size: 11px;
+        
+
+
+    }
+
+    li{
+        padding-left:5px ;
+        padding-right:5px
+
+    }
+   
+    .productosUltimaVisita{  /*dispongo en contendor a los 4 ariculos*/
+
+        display: flex; /*dispongo en contendor a los 4 ariculos*/
+        flex-wrap: wrap;  /*dispongo en contendor a los articulos que entren en el ancho del contenedor padre*/
+        justify-content: space-between
+
+
+    }
+
+    .productosOferta{
+        display: flex; /*dispongo en contendor a los 4 ariculos*/
+        flex-wrap: wrap;  /*dispongo en contendor a los articulos que entren en el ancho del contenedor padre*/
+        justify-content: space-between
+
+    }
+    
+    .productos{
+
+        width: 22.5%; /*dispongo el ancho de cada tarjeta respecto al contenedor padre*/
+        padding: 0px;
+        margin-bottom: 15px;
+    }
+
+    .contendorParaCirculoDelivery{
+        display: flex;
+        justify-content: end;
+    }
+
+    
+
+    .descuentos{
+
+        font-size: 16px;
+        color:#39b54a;
+        line-height: 1px;
+        padding-left: 60px;
+      
+    }
+    
+
+
 }
+
+
+
+
+
+
+
+
 
