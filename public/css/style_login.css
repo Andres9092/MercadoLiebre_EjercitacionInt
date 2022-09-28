@@ -1,0 +1,91 @@
+
+
+.botonSendsEARCHiCON{
+
+    background-color: white;
+    margin-left: 5px;
+    border:none;
+
+}
+
+
+.sectionLoginUser{
+    display: flex;
+    flex-direction: column;   /*centro el formulario*/
+    
+    align-items: center;
+}
+
+.divNombreLogin{
+
+    width: 60%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.nombreUsuario{
+
+    border:none;
+    background-color: white;
+    border-radius: 8px;
+    height: 35px ;
+    width: 100%;
+    padding-left: 10px;
+
+      /*text-align: center -> para centrar el texto interno*/
+    
+    
+}
+
+
+
+.divContraLogin{
+
+    width: 60%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.passLogin{
+
+    border:none;
+    background-color: white;
+    border-radius: 8px;
+    height: 35px ;
+    width: 100%;
+    padding-left: 10px;
+      /*text-align: center -> para centrar el texto interno*/
+
+}
+
+.sectionBotonEnviar{
+    display: flex;
+    flex-direction: column;   /*centro el formulario*/
+    align-items: center;
+    
+
+
+}
+
+
+.divSendButton{
+
+    width: 62%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+
+}
+
+.botonSend{
+
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    height: 35px 
+   
+}

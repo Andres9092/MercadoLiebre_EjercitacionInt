@@ -1,0 +1,142 @@
+.nombre-apellido{
+
+    width: 100%;  /*de su div padre contenedor que es el main*/
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.nombreYApe{
+
+    border:none;                    /*quito borde al input*/
+    background-color: white;
+    border-radius: 8px;
+    height: 35px ;
+    width: 100%;   /*de su div padre contenedor*/
+      /*text-align: center -> para centrar el texto interno*/
+      padding-left: 10px;
+    
+    
+}
+
+
+
+.nombre-usuario{
+
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.nombreUsu{
+
+    border:none;
+    background-color: white;
+    border-radius: 8px;
+    height: 35px ;
+    width: 100%;
+    padding-left: 10px;
+    
+    
+}
+
+
+.e-mail{
+
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.email{
+
+    border:none;
+    background-color: white;
+    border-radius: 8px;
+    height: 35px ;
+    width: 100%;
+    padding-left: 10px;
+    
+    
+}
+
+.titulofechaNacim{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.fechaNacimiento{
+
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.cumple{
+
+    border:none;
+    background-color: white;
+    border-radius: 8px;
+    height: 35px ;
+    width: 100%;
+    padding-left: 10px;
+    
+    
+}
+
+
+.domicilio{
+
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.domic{
+
+    border:none;
+    background-color: white;
+    border-radius: 8px;
+    height: 35px ;
+    width: 100%;
+    padding-left: 10px;
+    
+    
+}
+
+.perfilUsuario{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.checkPerfilUsuario{
+
+    display: flex;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    justify-content: space-around;        /*los checkbox son elementos de linea por default, no hace falta el flex + center*/
+}
+
+.radioComprador{
+    padding-left: 10px;
+}
+
+.radioVendedor{
+    padding-left: 10px;
+}
+
+.intereses{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.checkElectro, .checkHogar, .checkModa, .checkjugueteria{
+    margin-bottom: 15px;
+
+}
+.checkvidaSana{
+    margin-bottom: 30px;
+
+}
