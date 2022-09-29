@@ -38,7 +38,7 @@ body{
 
 }
 
-.searchIcon{
+.searchIcon {
 
     /*Asigno margen derecho maximo para acortar la 'barra blanca' de busqueda y que no ocupe todo el ancho de pantalla */
     
@@ -136,6 +136,8 @@ main{
 }
 
 
+
+
 .iconoCirculoDelivery{
     
     width: 40px;  /*genero un circulo a partir del div padre, al darle props de width y height iguales y border radius de 50%*/
@@ -143,6 +145,7 @@ main{
     border-radius: 50%;
     border: #39b54a solid 1px;
     margin-bottom: 0px;
+    background-color: white;   /*para que no se note la linea divisora cuando genero el movomiento relativo*/
   
  
 }
@@ -150,10 +153,24 @@ main{
 .iconoCamion{
 
     padding: 10px;  /*centro el camion, que esta dentro de un div, respecto al circulo*/
+    transition: transform 1000ms;
+}
+
+article:hover .iconoCamion{/*cuando paso por encima del articulo completo, impacta el giro antihorario para el elemento de clase .iconocamion*/
+
+    transform: rotate(-90deg);
+
 
 }
 
 
+
+.contendorParaCirculoDelivery{
+    display: flex;
+    justify-content: end;
+    position: relative;   /*movto relativo a su posicion original*/
+    bottom: 37px;  /*desplazo el contenededor completo que tiene el div del icono,desde el bottom del div padre.*/
+}
 
 .cadaProductoSinLaFoto{
 
@@ -202,10 +219,20 @@ p{
 }
 
 .descripcion{
-
+    display: none;
     font-size: 1rem;
     color:grey
 }
+
+
+article:hover{/*cuando paso por encima del articulo completo, impacta el giro antihorario para el elemento de clase .iconocamion*/
+
+    box-shadow: 5px 10px #888888;
+
+
+}
+
+
 
 
 
@@ -343,6 +370,15 @@ footer{          /*props generales para todo el header*/
         
         
     }
+  
+    article:hover{/*cuando paso por encima del articulo completo, impacta el giro antihorario para el elemento de clase .iconocamion*/
+
+        box-shadow: 5px 10px #888888;
+    
+    
+    }
+    
+    
    
 }
 
@@ -507,7 +543,21 @@ footer{          /*props generales para todo el header*/
         padding-left: 60px;
       
     }
+    .descripcion{
+        display: block
+    }
     
+
+    article:hover{/*cuando paso por encima del articulo completo, impacta el giro antihorario para el elemento de clase .iconocamion*/
+
+        box-shadow: 5px 10px #888888;
+    
+    
+    }
+    
+    
+
+
 }
 
 
@@ -674,6 +724,28 @@ footer{          /*props generales para todo el header*/
       
     }
     
+
+
+
+    .descripcion{
+        display: none;
+    }
+
+    article:hover .descripcion{/*cuando paso por encima del articulo completo, muestra la descripcion del prodcuto que estaba oculta para esta resolucion*/
+
+    display: block
+    
+
+}
+
+article:hover{/*cuando paso por encima del articulo completo, impacta el giro antihorario para el elemento de clase .iconocamion*/
+
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+
+}
+
+
+
 
 
 }
