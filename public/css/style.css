@@ -25,38 +25,94 @@ body{
     
 }
 
+
+.topHeader{
+
+    margin-bottom: 15px;  /*alejo el topHeader del burguer menu*/
+}
+
+.imagenBanner{
+
+    margin-top: 20px
+}
+    
+   
+.logo-barraBuscadora{   /*contenedor padre que contiene el logo meli y el contenedor que a su vez contiene la barra buscadora y el icono search*/
+
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+ 
+}
+
+
+.logoMeli {  /*mitad del div padre*/
+
+    padding-right: 5px;
+}
+
+.barraBuscadora-Icon{   /*contenedor generado para unir la barra buscadora y el icono search*/
+
+    background-color: white;
+    border: solid 1px white;
+    border-radius: 3px;
+    flex-grow: 0.5;/*mitad del div padre*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+    
+    
+}
+
+
+
 .barraBuscadora{
 
                    /*Asigno props de borde al div: color, grosor y estilo*/
     background-color: white;
     max-width: 210px;
-    border: thin black solid;
     text-align: left;  /*Centrado de texo dentro del div*/
-    border-radius: 2px solid ;/*Radio de borde de la barra*/
+    /*Radio de borde de la barra*/
     display:inline-block; /*Posiciono como elemento de linea para colocar el icono de buqueda al lado*/
     font-size:15px;
+    border-color: white;
+    outline: none;
+    border:none;
+    font-size: 10px;
+    margin:0;
+    padding-left:5px
+ 
 
 }
 
-.searchIcon {
+.botonSendBarraBuscadora{
+
+    background-color: white;
+    border: none;
+    /* position: relative;
+    right: 6px; */
+}
+
+/* .searchIcon {
 
     /*Asigno margen derecho maximo para acortar la 'barra blanca' de busqueda y que no ocupe todo el ancho de pantalla */
     
-    margin-left: 1px;            /*Asigno margen superior del div para separar de la barra de busqueda*/
+    /* margin-left: 1px;            Asigno margen superior del div para separar de la barra de busqueda */
                      /*Asigno props de borde al div: color, grosor y estilo*/
-    background-color: white;
-    border: thin black solid;
-    max-width: 15px; 
-    text-align: center;
-    border-radius: 2px;
-    display:inline-block;/*Posiciono como elemento de linea para colocar la barra de buqueda al lado*/
-    font-size:15px;
-    padding-left: 1px;
-    padding-right: 1px;
 
-}
+    /* max-width: 15px; 
+    text-align: center; */
+    /* display:inline-block;Posiciono como elemento de linea para colocar la barra de buqueda al lado */
+    /* font-size:15px;
+    border:none;
+    padding-right:5px */
 
 
+/* } */ 
 
     
 .compraCuotasCentrado{
@@ -64,8 +120,11 @@ body{
     text-align: center;
     font-size: 15px;
     font-weight: 500;
+
     
+
 }
+
 
 .burger-menu{
 
@@ -78,6 +137,26 @@ body{
     border-radius: 3px;
     
 }
+
+
+.bottomHeader{
+
+    display:none; /*escondo el contenedor de las listas desordenadas*/
+}
+
+
+
+
+article:hover{/*cuando paso por encima del articulo completo, impacta el giro antihorario para el elemento de clase .iconocamion*/
+
+    box-shadow: 5px 10px #888888;
+
+
+}
+
+
+
+
 
 ul{   /*edito cada item del los dos listados*/
 
@@ -103,6 +182,11 @@ a{     /*edito cada link*/
    width: 100%; /*ocupar el 100% del div osea del header*/
 }
 
+/*---------------------------------------------------- HASTA ACA EL HEADER-------------------------------------------------*/
+
+
+/*---------------------------------------------------- MAIN-------------------------------------------------*/
+
 main{
 
 
@@ -111,6 +195,7 @@ main{
     background-color: #ebebeb;
     margin-top: 0px;
     padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .seccionVisita{
@@ -122,9 +207,7 @@ main{
 
     margin-bottom: 10px;
     box-shadow: 5px 5px 5px 3px rgba(0,0,0,0.3);  
-    
-   
-        
+          
 }
 
 .imagen{
@@ -134,8 +217,6 @@ main{
    padding-top: 10px;
    background-color: white; /*para completar con mismo color la porcion agregada del padding y darle mas top blanco por encima de la imagen*/
 }
-
-
 
 
 .iconoCirculoDelivery{
@@ -163,12 +244,10 @@ article:hover .iconoCamion{/*cuando paso por encima del articulo completo, impac
 
 }
 
-
-
 .contendorParaCirculoDelivery{
     display: flex;
     justify-content: end;
-    position: relative;   /*movto relativo a su posicion original*/
+    position: relative;   /*movto del div relativo a su posicion original*/
     bottom: 37px;  /*desplazo el contenededor completo que tiene el div del icono,desde el bottom del div padre.*/
 }
 
@@ -178,6 +257,7 @@ article:hover .iconoCamion{/*cuando paso por encima del articulo completo, impac
     padding: 15px;
     border: solid 1px #ebebeb;
     background-color: white;
+   
 
 }
 
@@ -192,6 +272,9 @@ article:hover .iconoCamion{/*cuando paso por encima del articulo completo, impac
 .datosNumeros{
 
     margin-top: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 
@@ -225,22 +308,24 @@ p{
 }
 
 
-article:hover{/*cuando paso por encima del articulo completo, impacta el giro antihorario para el elemento de clase .iconocamion*/
+article:hover{/*cuando paso por encima del articulo completo, genera shadow*/
 
     box-shadow: 5px 10px #888888;
 
 
 }
+ /*--------------------------------------------------FOOTER-----------------------------------------------------r*/
 
 
+ .seccionFooter{
 
-
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
 
 footer{          /*props generales para todo el header*/
-    
-    font-family: 'Roboto', sans-serif;
-   
+ 
     text-align: center;   
                                                                                                                                              
 }
@@ -252,7 +337,7 @@ footer{          /*props generales para todo el header*/
     /*Asigno margen superior del div para separar de la barra de busqueda*/
     margin-bottom: 10px;             /*Asigno props de borde al div: color, grosor y estilo*/
     border-radius: 1px;
-    
+    color:  #0730b6
 }
 
 .textosSecciones{
@@ -297,91 +382,7 @@ footer{          /*props generales para todo el header*/
 }
 
 
-
-
-@media (max-width:735px){
-
-   
-    .bottomHeader{
-
-        display:none; /*escondo el contenedor de las listas desordenadas*/
-    }
-
-    .topHeader{
-
-        margin-bottom: 15px;  /*alejo el topHeader del burguer menu*/
-    }
-
-    .imagenBanner{
-
-        margin-top: 20px
-    }
-        
-       
-    .compraCuotasCentrado{
-
-        font-size: 12px;
-    }
-
-    .barraBuscadora{  /*edito la barra buscadora*/
-
-        border:none;
-        font-size: 10px;
-        margin:0;
-        padding-left:5px
-    }
-
-    .searchIcon{  /*edito el icono buscador*/
-
-        border:none;
-        padding-right:5px
-
-    }
-   
-
-    .logo-barraBuscadora{   /*contenedor padre que contiene el logo meli y el contenedor que a su vez contiene la barra buscadora y el icono search*/
-
-        display: flex;
-        justify-content: space-around;
-        margin-top: 10px;
-        margin-bottom: 20px;
-        padding-left: 10px;
-        padding-right: 10px;
-     
-    }
-
-    
-    .logoMeli {  /*mitad del div padre*/
-
-        flex-grow: 0.5;
-        padding-right: 5px;
-    }
-    
-    .barraBuscadora-Icon{   /*contenedor generado para unir la barra buscadora y el icono search*/
-
-        background-color: white;
-        background-color: white;
-        border: solid 1px white;
-        border-radius: 3px;
-        flex-grow: 0.5;/*mitad del div padre*/
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        
-        
-    }
-  
-    article:hover{/*cuando paso por encima del articulo completo, impacta el giro antihorario para el elemento de clase .iconocamion*/
-
-        box-shadow: 5px 10px #888888;
-    
-    
-    }
-    
-    
-   
-}
-
+ /*------------------------------------------------------------1ra qeyery 735px---------------------------------------------*/
 
 @media (min-width:735px){
 
@@ -397,7 +398,7 @@ footer{          /*props generales para todo el header*/
         display: flex;  /*dispongo en misma linea los 3 items internos: logo, barra+searicon y frase cuotas*/
         margin-top:10px;
         justify-content: space-around;  /*acomodo los 3 items internos: logo, barra+searicon y frase cuotas*/
-       align-items: center;
+        align-items: center;
         
     }
 
@@ -408,9 +409,6 @@ footer{          /*props generales para todo el header*/
 
        
     }
-
-
- 
 
     .logo-barraBuscadora{   /*contenedor padre que contiene el logo meli y el contenedor que a su vez contiene la barra buscadora y el icono search*/
 
@@ -438,18 +436,6 @@ footer{          /*props generales para todo el header*/
         
     }
 
-    
-    .searchIcon{  /*edito el icono buscador*/
-
-        border:none;    
-        border-radius:2px;
-        border: solid 1px black;
-        margin-left: 5px;
-        
-    
-
-    }
-
     .barraBuscadora{  /*edito la barra buscadora*/
 
         border:solid 1px white;
@@ -458,14 +444,11 @@ footer{          /*props generales para todo el header*/
        
     }
 
-
     .compraCuotasCentrado{
 
-        font-size: 15px;
-       
-      
+        font-size: 15px;     
+     
     }
-
 
     .bottomHeader{ /*dispongo en misma linea los 2 pares de ul*/
 
@@ -491,6 +474,12 @@ footer{          /*props generales para todo el header*/
         flex-grow: 0.5;
         padding-right: 10px;
     }
+
+
+/*------------------------------------1 RA QEURY DEL HEADER HASTA ACA-----------------------*/
+
+
+
 
     ul{
         font-size: 11px;
@@ -523,7 +512,7 @@ footer{          /*props generales para todo el header*/
     
     .productos{
 
-        width: 45%; /*dispongo el ancho de cada tarjeta respecto al contenedor padre*/
+        width: 45%; /*dispongo el ancho de cada tarjeta respecto al contenedor padre para que entren dos articulos en linea*/
         padding: 0px;
         margin-bottom: 15px;
     }
@@ -548,12 +537,7 @@ footer{          /*props generales para todo el header*/
     }
     
 
-    article:hover{/*cuando paso por encima del articulo completo, impacta el giro antihorario para el elemento de clase .iconocamion*/
 
-        box-shadow: 5px 10px #888888;
-    
-    
-    }
     
     
 
@@ -561,6 +545,7 @@ footer{          /*props generales para todo el header*/
 }
 
 
+/*------------------------------------2 da QEURY 1024PX------------------ ----------------------------------*/
 
 
 @media (min-width:1024px){
@@ -585,12 +570,8 @@ footer{          /*props generales para todo el header*/
     .burger-menu{
 
         display:none;
-
        
     }
-
-
- 
 
     .logo-barraBuscadora{   /*contenedor padre que contiene el logo meli y el contenedor que a su vez contiene la barra buscadora y el icono search*/
 
@@ -615,7 +596,6 @@ footer{          /*props generales para todo el header*/
         display: flex;  /*dispongo en misma linea los 2 items internos:  barra y searicon */
         align-items: center;
     
-        
     }
 
     
@@ -623,10 +603,7 @@ footer{          /*props generales para todo el header*/
 
         border:none;    
         border-radius:2px;
-        border: solid 1px black;
         margin-left: 5px;
-        
-    
 
     }
 
@@ -703,17 +680,10 @@ footer{          /*props generales para todo el header*/
     
     .productos{
 
-        width: 22.5%; /*dispongo el ancho de cada tarjeta respecto al contenedor padre*/
+        width: 22.5%; /*dispongo el ancho de cada tarjeta respecto al contenedor padre y con esto me lo cuadra para que enten 4 en linea*/
         padding: 0px;
         margin-bottom: 15px;
     }
-
-    .contendorParaCirculoDelivery{
-        display: flex;
-        justify-content: end;
-    }
-
-    
 
     .descuentos{
 
@@ -725,9 +695,7 @@ footer{          /*props generales para todo el header*/
     }
     
 
-
-
-    .descripcion{
+    .descripcion{  /*oculto la descripcion*/
         display: none;
     }
 
@@ -738,20 +706,27 @@ footer{          /*props generales para todo el header*/
 
 }
 
-article:hover{/*cuando paso por encima del articulo completo, impacta el giro antihorario para el elemento de clase .iconocamion*/
+/*-----------------------2DA QUERY FOOTER------------------------------------*/
 
-    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+.seccionFooter{
 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+    
+ .iconosFooter{  
+    transition: transform 2000ms;
+ }
+
+.textosSecciones:hover .iconosFooter{     
+                                                /*- al pasar por textosSecciones, aplica efecto sobre iconosFooter-*/ 
+    color: rgb(0, 138, 223)
 }
 
 
-
-
-
 }
-
-
-
 
 
 

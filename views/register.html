@@ -34,14 +34,16 @@
             
                 <div class ="logo-barraBuscadora">
                     
-                    <img class="logoMeli" src = "/images/logo-mercado-liebre.svg" alt="Logotipo MercadoLiebre">
+                    <a href="https://www.mercadolibre.com.ar/"><img class="logoMeli" src = "/images/logo-mercado-liebre.svg" alt="Logotipo MercadoLiebre"></a>
            
-                    <div class = "barraBuscadora-Icon">                    
-                        <h2 class="barraBuscadora">Buscar productos, marcas...</h2>
+                    <div class = "barraBuscadora-Icon">      
+                        <input type="text" class="barraBuscadora" placeholder="Buscar productos, marcas...">             
             
                         <div class="searchIcon">
-                            <i class="fa-solid fa-magnifying-glass"></i>  <!--barra buscadora con icono. Pongo el icono dentro del titulo si no me hace el salto de linea -->
-                    </div>
+                           
+                            <button class="botonSendBarraBuscadora" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>  <!--barra buscadora con icono. Pongo el icono dentro del titulo si no me hace el salto de linea -->
+                        
+                        </div>
                     </div>
                 </div>
 
@@ -79,148 +81,143 @@
             </div>
         
         </div>
-
-        <div>
+ 
+        <div>  <!-- foto banner-->
             <img  class="imagenBanner"src = "/images/img-home-banner.jpg" alt="Imagen Home Banner">
         </div>
 
     </header>
-
-  
+      
+      <!------------------------------------------------------------------------>
 
     <main>
 
 
-    <form action ="/register.html" method = "get">
+        <form action ="/register.html" method = "get">   <!-- CREO FORMULARIO-->
 
-        <div class = "nombre-apellido">
-            <label for="nombreYApellido"></label>
-            <input class="nombreYApe" type="text" name="nombreYApellido" id="nombreYApellido" placeholder="Nombre y apellido" required autocomplete="on">
+            <div class = "nombre-apellido">
+                <label for="nombreYApellido"></label>
+                <input class="nombreYApe" type="text" name="nombreYApellido" id="nombreYApellido" placeholder="Nombre y apellido" required autocomplete="on">
 
-        </div>
+            </div>
 
-        <div class = "nombre-usuario">
-            <label for="nombreDeUsuario"></label>
-            <input class="nombreUsu" type="text" name="nombreDeUsuario" id="nombreDeUsuario" placeholder="Nombre de Usuario" required autocomplete="on">
+            <div class = "nombre-usuario">
+                <label for="nombreDeUsuario"></label>
+                <input class="nombreUsu" type="text" name="nombreDeUsuario" id="nombreDeUsuario" placeholder="Nombre de usuario" required autocomplete="on">
 
-        </div>
+            </div>
 
-        <div class = "e-mail">
-            <label for="correoElectronico"></label>
-            <input class="email" type="text" name="correoElectronico" id="correoElectronico" placeholder="E-mail" required autocomplete="on">
+            <div class = "e-mail">
+                <label for="correoElectronico"></label>
+                <input class="email" type="text" name="correoElectronico" id="correoElectronico" placeholder="E-mail" required autocomplete="on">
 
-        </div>
+            </div>
 
-        <p class="titulofechaNacim"> Fecha de nacimiento</p>
+            <p class="titulofechaNacim"> Fecha de nacimiento</p>
 
-        <div class = "fechaNacimiento">
-            
-            <label for="start"></label>
-            <input class="cumple" type="date" id="start" name="trip-start"
-            value="mm-dd-yyyy">
-        </div>
-
-
-        <div class = "domicilio">
-            <label for="domicil"></label>
-            <input class="domic" type="text" name="domicil" id="domicil" placeholder="Domicilio" required autocomplete="on">
-
-        </div>
-
-        <p class="perfilUsuario">Perfil del usuario</p>
-
-        <div class = "checkPerfilUsuario">
-
-            <label class="radioComprador" for="comprador"><input type="radio" name="perfil"  value="comprador" id="comprador" required autocomplete="on">Comprador</label>
-            <label class="radioVendedor" for="vendedor"><input  type="radio" name="perfil"  value="vendedor" id="vendedor" required autocomplete="on">Vendedor</label>
-                        
-        </div>
-
-        <p class="intereses">Intereses</p>
-
-       
-        <div>
-            <label><input type="checkbox" id="electro" name="intereses" checked class="checkElectro">Electro</label>
-         
-            
-        </div>
-      
-        <div>
-            <label for="moda"><input type="checkbox" id="moda" name="intereses" class="checkModa">Moda</label>
-                        
-        </div>
+            <div class = "fechaNacimiento">
+                
+                <label for="start"></label>
+                <input class="cumple" type="date" id="start" name="trip-start"  value="mm-dd-yyyy">
+            </div>
 
 
-     
-        <div>
-            <label for="hogar"><input type="checkbox" id="hogar" name="intereses" class="checkHogar">Hogar</label>
-                        
-        </div>
+            <div class = "domicilio">
+                <label for="domicil"></label>
+                <input class="domic" type="text" name="domicil" id="domicil" placeholder="Domicilio" required autocomplete="on">
 
+            </div>
 
-     
-        <div>
-            <label for="jugueteria"> <input type="checkbox" id="jugueteria" name="intereses" class="checkjugueteria">Jugueteria</label>
-           
-        </div>
+            <p class="perfilUsuario">Perfil del usuario</p>
 
-   
-        <div class="divUltimoCheckBox">
-            <label for="vidaSana"><input type="checkbox" id="vidaSana" name="intereses" class="checkvidaSana">Vida sana</label>
-            
-        </div>
+            <div class = "checkPerfilUsuario">
+
+                <label class="radioComprador" for="comprador"><input type="radio" name="perfil"  value="comprador" id="comprador" required autocomplete="on">Comprador</label>
+                <label class="radioVendedor" for="vendedor"><input  type="radio" name="perfil"  value="vendedor" id="vendedor" required autocomplete="on">Vendedor</label>
+                            
+            </div>
+
+            <p class="intereses">Intereses</p>
+
+        
+            <div>
+                <label><input type="checkbox" id="electro" name="intereses" checked class="checkElectro">Electro</label>
+            </div>
+        
+            <div>
+                <label for="moda"><input type="checkbox" id="moda" name="intereses" class="checkModa">Moda</label>     
+            </div>
+        
+            <div>
+                <label for="hogar"><input type="checkbox" id="hogar" name="intereses" class="checkHogar">Hogar</label>                      
+            </div>
+        
+            <div>
+                <label for="jugueteria"> <input type="checkbox" id="jugueteria" name="intereses" class="checkjugueteria">Jugueteria</label>
+            </div>
     
-    </form>
+            <div class="divUltimoCheckBox">
+                <label for="vidaSana"><input type="checkbox" id="vidaSana" name="intereses" class="checkvidaSana">Vida sana</label>          
+            </div>
+
+
+            <div class="divSendButton">   <!--uso el search icon como un boton de ejemplo, en vez de la palabra 'ENVIAR' -->
+
+                <button class="botonSend" type="submit">ENVIAR</button>
+            
+            </div>
+
+        
+        </form>
 
     
     </main>
 
-
-
-
-
-
-
     <footer>
         
-        <section class="textosSecciones">
-
-            <div class="iconosFooter">  <!-- tamaño icono fa-2x es igual a 2em-->
-                <i class="fa-regular fa-credit-card fa-2x" style="color:#1259c3"></i>
-            </div>
-
-            <h2 class = "titulosFooter">Pagá con tarjeta o en efectivo</h2>  <!-- uso <font size= con valor de 1 a 7 > para modificar tamaño de letra-->
+        <section class="seccionFooter">
+ 
+            <div class="textosSecciones">
             
-            <p class="parrafosFooter">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
-            puntos de pago. ¡Y siempre es seguro!.</p>
+                <div class="iconosFooter">  <!-- tamaño icono fa-2x es igual a 2em-->
+                    <i class="fa-regular fa-credit-card fa-2x"></i>
+                </div>
 
-        </section>
-        <br>
-
-        <section class="textosSecciones">
-
-            <div class="iconosFooter">  <!-- tamaño icono fa-2x es igual a 2em-->
-                <i class="fa-solid fa-gift fa-2x" style="color:#1259c3"></i>
+                <h2 class = "titulosFooter">Pagá con tarjeta o en efectivo</h2>  <!-- uso <font size= con valor de 1 a 7 > para modificar tamaño de letra-->
+                
+                <p class="parrafosFooter">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                puntos de pago. ¡Y siempre es seguro!.</p>
+                
             </div>
+       
+            <br>
 
-            <h2 class = "titulosFooter">Envío gratis desde $ 2.500</h2>  
-            <p class="parrafosFooter">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
-                productos. Es un beneficio de Mercado Puntos.</p>
+            <div class="textosSecciones">
 
-        </section>
-        <br>
+                <div class="iconosFooter">  <!-- tamaño icono fa-2x es igual a 2em-->
+                    <i class="fa-solid fa-gift fa-2x" ></i>
+                </div>
 
-        <section class="textosSecciones">
+                <h2 class = "titulosFooter">Envío gratis desde $ 2.500</h2>  
+                <p class="parrafosFooter">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                    productos. Es un beneficio de Mercado Puntos.</p>
 
-            <div class="iconosFooter">  <!-- tamaño icono fa-2x es igual a 2em-->
-                <i class="fa-solid fa-user-shield fa-2x" style="color:#1259c3"></i>
             </div>
+            <br>
 
-            <div class="interlin">
-                <h2 class = "titulosFooter">Seguridad, de principio a fin</h2>  
+        
+            <div class="textosSecciones">
+                <div class="iconosFooter">  <!-- tamaño icono fa-2x es igual a 2em-->
+                    <i class="fa-solid fa-user-shield fa-2x"></i>
+                </div>
+
+                <div class="interlin">
+                    <h2 class = "titulosFooter">Seguridad, de principio a fin</h2>  
+                </div>
+                <p class="parrafosFooter">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                    porque estás siempre protegid@.</p>
+
             </div>
-            <p class="parrafosFooter">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
-                porque estás siempre protegid@.</p>
 
         </section>
 
@@ -233,7 +230,6 @@
         <br>
 
     </footer>
-    
 </body>
 
 </html>

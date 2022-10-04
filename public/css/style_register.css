@@ -14,10 +14,8 @@
     width: 100%;   /*de su div padre contenedor*/
       /*text-align: center -> para centrar el texto interno*/
       padding-left: 10px;
-    
-    
+     
 }
-
 
 
 .nombre-usuario{
@@ -112,10 +110,11 @@
 .checkPerfilUsuario{
 
     display: flex;
+    justify-content: space-around;  
     width: 100%;
     margin-top: 15px;
     margin-bottom: 15px;
-    justify-content: space-around;        /*los checkbox son elementos de linea por default, no hace falta el flex + center*/
+          /*los checkbox son elementos de linea por default, no hace falta el flex + center*/
 }
 
 .radioComprador{
@@ -139,4 +138,26 @@
 .checkvidaSana{
     margin-bottom: 30px;
 
+
+}
+
+.divSendButton{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.botonSend{
+
+    width: 40%;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    height: 35px 
+   
 }

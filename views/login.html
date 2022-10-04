@@ -34,31 +34,17 @@
             
                 <div class ="logo-barraBuscadora">
                     
-                    <img class="logoMeli" src = "/images/logo-mercado-liebre.svg" alt="Logotipo MercadoLiebre">
+                    <a href="https://www.mercadolibre.com.ar/"><img class="logoMeli" src = "/images/logo-mercado-liebre.svg" alt="Logotipo MercadoLiebre"></a>
            
-                   
-                   
-                    <div class="barraBuscadora-Icon">
-
-                        <label for="barra"></label>
-                        <input class="barraBuscadora" type="text" name="barra" id="barra" placeholder="Buscar productos, marcas..." required autocomplete="on">
-                        
-                        <div class="searchIconbUTON">
-                        <button class="botonSendsEARCHiCON" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                        </div>
-                    </div>
-                   
-                    
-                   
-                   
-                   
-                    <!-- <div class = "barraBuscadora-Icon">                    
-                        <h2 class="barraBuscadora">Buscar productos, marcas...</h2>
+                    <div class = "barraBuscadora-Icon">      
+                        <input type="text" class="barraBuscadora" placeholder="Buscar productos, marcas...">             
             
                         <div class="searchIcon">
-                            <i class="fa-solid fa-magnifying-glass"></i>  barra buscadora con icono. Pongo el icono dentro del titulo si no me hace el salto de linea
+                           
+                            <button class="botonSendBarraBuscadora" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>  <!--barra buscadora con icono. Pongo el icono dentro del titulo si no me hace el salto de linea -->
+                        
                         </div>
-                    </div> -->
+                    </div>
                 </div>
 
                 <h2 class="compraCuotasCentrado"><i class="fa-solid fa-bag-shopping"></i> Compra en cuotas y sin tarjeta de credito</h2>   <!-- icono shopping con frase -->
@@ -95,12 +81,13 @@
             </div>
         
         </div>
-
-        <div>
+ 
+        <div>  <!-- foto banner-->
             <img  class="imagenBanner"src = "/images/img-home-banner.jpg" alt="Imagen Home Banner">
         </div>
 
     </header>
+      
 
     <main>
 
@@ -129,75 +116,64 @@
 
                 <div class="divSendButton">   <!--uso el search icon como un boton de ejemplo, en vez de la palabra 'ENVIAR' -->
 
-                    <button class="botonSend" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                
+                                            <!-- <button class="botonSend" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>-->
+                    <button class="botonSend" type="submit">ENVIAR</button>
                 </div>
 
             </section>
 
             <br>
-            <br>
-            
+            <br>         
 
-
-
-
-
-
-
-
-
-
-
+        </form>
+        
     </main>
-  
-
-
-
-    
-
-
 
     <footer>
         
-        <section class="textosSecciones">
-
-            <div class="iconosFooter">  <!-- tamaño icono fa-2x es igual a 2em-->
-                <i class="fa-regular fa-credit-card fa-2x" style="color:#1259c3"></i>
-            </div>
-
-            <h2 class = "titulosFooter">Pagá con tarjeta o en efectivo</h2>  <!-- uso <font size= con valor de 1 a 7 > para modificar tamaño de letra-->
+        <section class="seccionFooter">
+ 
+            <div class="textosSecciones">
             
-            <p class="parrafosFooter">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
-            puntos de pago. ¡Y siempre es seguro!.</p>
+                <div class="iconosFooter">  <!-- tamaño icono fa-2x es igual a 2em-->
+                    <i class="fa-regular fa-credit-card fa-2x"></i>
+                </div>
 
-        </section>
-        <br>
-
-        <section class="textosSecciones">
-
-            <div class="iconosFooter">  <!-- tamaño icono fa-2x es igual a 2em-->
-                <i class="fa-solid fa-gift fa-2x" style="color:#1259c3"></i>
+                <h2 class = "titulosFooter">Pagá con tarjeta o en efectivo</h2>  <!-- uso <font size= con valor de 1 a 7 > para modificar tamaño de letra-->
+                
+                <p class="parrafosFooter">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                puntos de pago. ¡Y siempre es seguro!.</p>
+                
             </div>
+       
+            <br>
 
-            <h2 class = "titulosFooter">Envío gratis desde $ 2.500</h2>  
-            <p class="parrafosFooter">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
-                productos. Es un beneficio de Mercado Puntos.</p>
+            <div class="textosSecciones">
 
-        </section>
-        <br>
+                <div class="iconosFooter">  <!-- tamaño icono fa-2x es igual a 2em-->
+                    <i class="fa-solid fa-gift fa-2x" ></i>
+                </div>
 
-        <section class="textosSecciones">
+                <h2 class = "titulosFooter">Envío gratis desde $ 2.500</h2>  
+                <p class="parrafosFooter">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                    productos. Es un beneficio de Mercado Puntos.</p>
 
-            <div class="iconosFooter">  <!-- tamaño icono fa-2x es igual a 2em-->
-                <i class="fa-solid fa-user-shield fa-2x" style="color:#1259c3"></i>
             </div>
+            <br>
 
-            <div class="interlin">
-                <h2 class = "titulosFooter">Seguridad, de principio a fin</h2>  
+        
+            <div class="textosSecciones">
+                <div class="iconosFooter">  <!-- tamaño icono fa-2x es igual a 2em-->
+                    <i class="fa-solid fa-user-shield fa-2x"></i>
+                </div>
+
+                <div class="interlin">
+                    <h2 class = "titulosFooter">Seguridad, de principio a fin</h2>  
+                </div>
+                <p class="parrafosFooter">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                    porque estás siempre protegid@.</p>
+
             </div>
-            <p class="parrafosFooter">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
-                porque estás siempre protegid@.</p>
 
         </section>
 
@@ -210,7 +186,6 @@
         <br>
 
     </footer>
-    
 </body>
 
 </html>
