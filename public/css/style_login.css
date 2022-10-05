@@ -58,6 +58,10 @@
 
 }
 
+.error-password{
+    display: none;
+}
+
 .sectionBotonEnviar{
     display: flex;
     flex-direction: column;   /*centro el formulario*/
@@ -82,7 +86,7 @@
     width: 100%;
     margin-top: 15px;
     margin-bottom: 5px;
-    background-color: blue;
+    background-color: rgb(34, 34, 199);
     color: white;
     text-align: center;
     border-radius: 8px;

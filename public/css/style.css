@@ -375,11 +375,22 @@ footer{          /*props generales para todo el header*/
 .copyr{
 
     text-align: left;
-    font-size: 12px;
+    font-size: 10px;
     color: #7a7676;
     font-weight:bolder;
     padding-left: 15px
 }
+
+
+.iconosFooter{  
+    transition: transform 2000ms;
+ }
+
+.textosSecciones:hover .iconosFooter{     
+                                                /*- al pasar por textosSecciones, aplica efecto sobre iconosFooter-*/ 
+    color: rgb(0, 138, 223)
+}
+
 
 
  /*------------------------------------------------------------1ra qeyery 735px---------------------------------------------*/
@@ -482,7 +493,7 @@ footer{          /*props generales para todo el header*/
 
 
     ul{
-        font-size: 11px;
+        font-size: 13px;
         
 
 
@@ -650,8 +661,7 @@ footer{          /*props generales para todo el header*/
     }
 
     ul{
-        font-size: 11px;
-        
+        font-size: 13px;   
 
 
     }
@@ -678,6 +688,7 @@ footer{          /*props generales para todo el header*/
 
     }
     
+
     .productos{
 
         width: 22.5%; /*dispongo el ancho de cada tarjeta respecto al contenedor padre y con esto me lo cuadra para que enten 4 en linea*/
@@ -690,13 +701,17 @@ footer{          /*props generales para todo el header*/
         font-size: 16px;
         color:#39b54a;
         line-height: 1px;
-        padding-left: 60px;
+        padding-left: 42px;
       
     }
     
 
     .descripcion{  /*oculto la descripcion*/
         display: none;
+    }
+
+    .descripcion{
+        transition: transform 2000ms;
     }
 
     article:hover .descripcion{/*cuando paso por encima del articulo completo, muestra la descripcion del prodcuto que estaba oculta para esta resolucion*/
@@ -716,16 +731,6 @@ footer{          /*props generales para todo el header*/
 }
 
     
- .iconosFooter{  
-    transition: transform 2000ms;
- }
-
-.textosSecciones:hover .iconosFooter{     
-                                                /*- al pasar por textosSecciones, aplica efecto sobre iconosFooter-*/ 
-    color: rgb(0, 138, 223)
-}
-
-
 }
 
 
