@@ -5,11 +5,9 @@ const path = require('path')
 
 app.use(express.static(path.join(__dirname, 'public')))  //se puede prescidir de este termino __dirname,
 
-app.listen(3030, ()  => {
+app.listen(process.env.PORT || 3000, () =>  console.log('Servidor 3000 corriendo'));
 
-    console.log('Servidor 3030 corriendo')
 
-})
 
 app.get('/', (req,res) => { //
 
